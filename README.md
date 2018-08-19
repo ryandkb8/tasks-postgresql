@@ -6,7 +6,7 @@ This is the database for the tasks service.
 This uses a tool called Flyway for database migrations. 
 When the docker image is being built it will run Flyway database migrations using the SQL files in the `sql` directory.
 This will result in the docker image having the latest schema. If the schema needs to be updated add additioanl SQL files in the `sql` directory and run `./release.sh`. 
-NOTE: The naming of the SQL files need to follow Flyway migration convention in order for it to be picked up.
+NOTE: The naming of the SQL files need to follow Flyway naming convention in order for it to be migrated successfully.
 
 ## Bringing up local instance
 To bring up a local instance of this database database run the following: `./start_db.sh`
